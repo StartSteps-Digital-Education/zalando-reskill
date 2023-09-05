@@ -69,13 +69,5 @@ public class Basics {
         System.out.println("Total cost before discount: " + totalCostBeforeDiscount + " euros");
         System.out.println("Discount applied: " + discount + " euros");
         System.out.println("Total cost after discount: " + totalCostAfterDiscount + " euros");
-
-        int banana = 3;
-        int biscuits = 5;
-
-        double totalcostbanaba = banana * 0.5;
-        double totalcostbiscuts = biscuits * 2;
-        double totalplusdiscount = (totalcostbanaba + totalcostbiscuts - 0.5);
-        System.out.println(totalplusdiscount);
     }
 }
