@@ -3,7 +3,7 @@ package org.example.class_01;
 
 import java.util.Scanner;
 
-public class Main {
+public class Numerals {
     public static void main(String[] args) {
         // accept an input -> process -> output
         // num1, num 2 -> 3 + 4 -> 7
