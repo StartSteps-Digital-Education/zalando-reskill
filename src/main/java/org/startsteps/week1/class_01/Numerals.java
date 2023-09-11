@@ -1,4 +1,4 @@
-package org.example.class_01;
+package org.startsteps.week1.class_01;
 
 
 import java.util.Scanner;

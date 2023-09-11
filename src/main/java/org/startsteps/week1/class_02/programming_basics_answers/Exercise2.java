@@ -1,4 +1,4 @@
-package org.example.class_02.programming_basics_answers;
+package org.startsteps.week1.class_02.programming_basics_answers;
 
 public class Exercise2 {
     public static void main(String[] args) {

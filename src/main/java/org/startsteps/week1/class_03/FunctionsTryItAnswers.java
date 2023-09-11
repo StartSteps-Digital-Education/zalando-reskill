@@ -1,4 +1,4 @@
-package org.example.class_3;
+package org.startsteps.week1.class_03;
 
 public class FunctionsTryItAnswers {
 

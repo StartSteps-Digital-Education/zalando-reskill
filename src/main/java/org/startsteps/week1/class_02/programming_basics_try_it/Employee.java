@@ -1,4 +1,4 @@
-package org.example.class_02.programming_basics_try_it;
+package org.startsteps.week1.class_02.programming_basics_try_it;
 
 public class Employee {
 

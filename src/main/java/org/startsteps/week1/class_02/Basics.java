@@ -1,4 +1,4 @@
-package org.example.class_02;
+package org.startsteps.week1.class_02;
 
 public class Basics {
     public static void main(String[] args) {
