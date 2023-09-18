@@ -1,0 +1,51 @@
+Exercise 1: Understanding Scope
+
+Create a Java class named ScopeExample with the following attributes and methods:
+
+Attributes:
+private int a;
+private int b;
+
+Methods:
+public ScopeExample(int a, int b): Constructor that initializes the a and b attributes.
+public void printSum(): A method that prints the sum of a and b.
+
+In the main method of another class, create an instance of ScopeExample, set values for a and b,
+and call the printSum method. Observe the scope of a and b.
+
+
+Exercise 2: Using instanceof
+
+Create a Java class hierarchy with a base class Vehicle and two subclasses, Car and Bicycle. Each class should have an
+identify method that prints a message specific to the type of vehicle.
+
+In the main method, create instances of both Car and Bicycle, and use instanceof to identify their types and call the
+identify method accordingly.
+
+
+Exercise 3: Implementing hashCode and Equals
+
+Create a Java class named Product with the following attributes and methods:
+
+Attributes:
+private int id;
+private String name;
+
+Methods:
+public Product(int id, String name): Constructor that initializes the id and name.
+
+@Override public boolean equals(Object obj): Override the equals method to compare two Product objects based
+on their id and name.
+@Override public int hashCode(): Override the hashCode method to generate a hash code based on id and name.
+
+In the main method, create multiple instances of Product with the same and different values for id and name.
+Compare them using equals and observe the behavior. Also, print their hash codes using hashCode.
+
+
+Exercise 4: Implementing toString
+
+Extend the Product class from Exercise 3 by adding a toString method. The toString method should return a string
+representation of the Product object in a user-friendly format (e.g., "Product ID: 101, Name: Laptop").
+
+In the main method, create instances of Product and use the toString method to print their details.
+
