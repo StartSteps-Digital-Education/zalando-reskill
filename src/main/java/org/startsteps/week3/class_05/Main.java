@@ -4,8 +4,7 @@ public class Main {
     public static void main(String[] args) {
         AudioPlayer mp3Player = new Mp3Player();
         AudioPlayer wavPlayer = new WavPlayer();
-
-
+        
         // credit card = pay() {}, klarna = pay() {}
 
         // Play, pause, and stop audio using both players
