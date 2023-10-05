@@ -1,4 +1,4 @@
-package org.startsteps.week5.jarLab;
+package org.startsteps.week5.class01.jarLab;
 
 public class MainApp {
    public static void main(String[] args) {
