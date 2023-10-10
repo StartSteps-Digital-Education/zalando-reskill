@@ -1,4 +1,4 @@
-package org.startsteps.week06.class02;
+package org.startsteps.week6.class_02;
 
 import java.util.List;
 import java.util.Random;

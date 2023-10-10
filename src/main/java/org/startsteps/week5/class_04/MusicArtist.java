@@ -1,4 +1,4 @@
-package org.startsteps.week5.class04;
+package org.startsteps.week5.class_04;
 
 public class MusicArtist implements Artist {
     private String name;

@@ -1,4 +1,4 @@
-package org.startsteps.week06.class02;
+package org.startsteps.week6.class_02;
 
 public class ElectronicProduct extends Product {
     private String brand;

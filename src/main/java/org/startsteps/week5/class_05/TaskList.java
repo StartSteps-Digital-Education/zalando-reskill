@@ -1,4 +1,4 @@
-package org.startsteps.week5.class05;
+package org.startsteps.week5.class_05;
 
 import java.util.ArrayList;
 import java.util.List;

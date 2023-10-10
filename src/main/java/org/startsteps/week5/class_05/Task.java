@@ -1,4 +1,4 @@
-package org.startsteps.week5.class05;
+package org.startsteps.week5.class_05;
 
 class Task implements Taskable {
     private String title;

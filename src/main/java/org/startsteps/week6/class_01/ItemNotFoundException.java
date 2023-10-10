@@ -1,4 +1,4 @@
-package org.startsteps.week06.class01;
+package org.startsteps.week6.class_01;
 
 public class ItemNotFoundException extends Exception {
     public ItemNotFoundException(String message) {
