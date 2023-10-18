@@ -1,4 +1,4 @@
-package org.startsteps.week7;
+package org.startsteps.week7.class_01;
 
 /**
  * @version : 1.0

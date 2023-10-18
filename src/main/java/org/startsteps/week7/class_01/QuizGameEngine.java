@@ -1,4 +1,4 @@
-package org.startsteps.week7;
+package org.startsteps.week7.class_01;
 
 import java.util.List;
 

@@ -1,6 +1,5 @@
-package org.startsteps.week7;
+package org.startsteps.week7.class_01;
 
-import java.lang.annotation.Documented;
 import java.lang.reflect.Field;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -96,10 +95,5 @@ public class Main {
 
 
 
-}
-
-@FunctionalInterface
-interface MyFunctionalInterface {
-    void someMethod();
 }
 
