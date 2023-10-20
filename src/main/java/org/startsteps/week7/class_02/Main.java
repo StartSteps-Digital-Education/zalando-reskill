@@ -30,7 +30,7 @@ public class Main {
 
         List<Book> booksByAuthor = library.searchBookByAuthor("Author 2");
         System.out.println("Books by author 2");
-        for(Book book: booksByAuthor) {
+        for (Book book : booksByAuthor) {
             System.out.println(book);
         }
     }

@@ -1,9 +1,9 @@
 package org.startsteps.week7.class_02;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import org.startsteps.week7.class_01.Member;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Library {
     private ArrayList<Book> books;
@@ -51,6 +51,23 @@ public class Library {
     }
 
     // add search by title
+    public List<Book> searchBookByTitle(String title) {
+        List<Book> result = new ArrayList<>();
+        for (Book book: books) {
+            if (book.getTitle().equalsIgnoreCase(title)) {
+                result.add(book);
+            }
+        }
+
+        return result;
+    }
+
+    public List<Book> searchBookByTitleOrAuthor(String searchTerm) {
+        return books.stream()
+                .filter(book -> book.getTitle().equalsIgnoreCase(searchTerm) || book.getAuthor().equalsIgnoreCase(searchTerm))
+                .collect(Collectors.toList());
+    }
+
 
     public void displayBooks() {
         System.out.println("All books: ");
