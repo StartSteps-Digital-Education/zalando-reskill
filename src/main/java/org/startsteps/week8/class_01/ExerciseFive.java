@@ -1,4 +1,4 @@
-package day1;
+package org.startsteps.week8.class_01;
 
 import java.io.BufferedReader;
         import java.io.FileReader;
