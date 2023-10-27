@@ -1,6 +1,7 @@
 package org.startsteps.week8.class_05;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 class Student implements Serializable {
@@ -18,6 +19,12 @@ class Student implements Serializable {
         this.age = age;
         this.hobbies = hobbies;
         this.studentID = studentID;
+        this.grades = new ArrayList<>(){{
+            add("A");
+            add("B");
+            add("C");
+            add("D");
+        }};
     }
 
     public Student(String name, int age, List<String> hobbies, String studentID, double gpa) {
@@ -26,6 +33,12 @@ class Student implements Serializable {
         this.hobbies = hobbies;
         this.studentID = studentID;
         this.gpa = gpa;
+        this.grades = new ArrayList<>(){{
+            add("A");
+            add("B");
+            add("C");
+            add("D");
+        }};
     }
 
     public String getName() {
