@@ -1,4 +1,4 @@
-package day1;
+package org.startsteps.week8.class_01;
 
 public class User {
     String name, email, address, phoneNumber;
