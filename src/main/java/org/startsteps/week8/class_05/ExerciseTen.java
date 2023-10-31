@@ -9,13 +9,15 @@ public class ExerciseTen {
 
         if (students != null) {
             // Generate summary report
-            double averageGPA = calculateAverageGPA(students.get(0).getGrades());
-            int totalStudents = students.size();
-            // You can calculate other relevant statistics if needed.
+            for(Student student : students) {
+                double averageGPA = calculateAverageGPA(student.getGrades());
+                int totalStudents = students.size();
+                // You can calculate other relevant statistics if needed.
 
-            // Export summary report to a text file
-            exportSummaryReport(averageGPA, totalStudents, "summary_report.txt");
-            System.out.println("Summary report exported to 'summary_report.txt'.");
+                // Export summary report to a text file
+                exportSummaryReport(averageGPA, totalStudents, "summary_report.txt");
+                System.out.println("Summary report exported to 'summary_report.txt'.");
+            }
         }
     }
 
@@ -25,7 +27,7 @@ public class ExerciseTen {
 
             for (String grade : grades) {
                 // Convert grades to points and sum them up
-                // For example: A=4, B=3, C=2, D=1, F=0
+                // For example: A=4, B=3, C=2, D=1, E=0, F=0
                 switch (grade) {
                     case "A":
                         totalPoints += 4;
@@ -39,19 +41,19 @@ public class ExerciseTen {
                     case "D":
                         totalPoints += 1;
                         break;
-                    // F is already 0 points, so no need to handle it separately.
+                    // E, F is already 0 points, so no need to handle it separately.
                 }
             }
 
             if (totalGrades > 0) {
-                return (double) totalPoints / totalGrades;
+                return (double) totalPoints / totalGrades; // (double) 15/2 = 7.5
             } else {
                 return 0.0; // Return 0 if no grades are available to calculate the GPA.
             }
         }
 
     public static void exportSummaryReport(double averageGPA, int totalStudents, String fileName) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(fileName))) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(fileName, true))) {
             // Write summary report to the text file
             writer.println("Summary Report");
             writer.println("Average GPA: " + averageGPA);
