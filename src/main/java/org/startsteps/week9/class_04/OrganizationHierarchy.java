@@ -1,4 +1,6 @@
-package org.startsteps.week9.class_02;
+package org.startsteps.week9.class_04;
+
+import org.startsteps.week9.class_04.model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +66,7 @@ public class OrganizationHierarchy {
         }
         // Note: If managerId is equal to the node's ID, you can decide how to handle it (e.g., skip or handle it accordingly)
     }
+
 
     // Method to print the organization hierarchy (in-order traversal)
     // Exercise 2
@@ -156,8 +159,8 @@ public class OrganizationHierarchy {
         employees.add(node.getEmployee());
 
         // Recur on left and right subtrees to collect subordinates
-//        collectSubordinates(node.getLeft(), employees);
-//        collectSubordinates(node.getRight(), employees);
+        collectSubordinates(node.getLeft(), employees);
+        collectSubordinates(node.getRight(), employees);
     }
 
     // Helper method to find the node of an employee with a specific ID
