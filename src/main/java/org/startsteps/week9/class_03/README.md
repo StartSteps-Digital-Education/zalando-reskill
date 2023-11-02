@@ -1,0 +1,1 @@
+# No exercises on day 3 as the group is doing a soft skills day
