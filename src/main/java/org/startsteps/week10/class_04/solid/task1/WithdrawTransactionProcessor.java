@@ -3,18 +3,18 @@ package org.startsteps.week10.class_04.solid.task1;
 import java.util.concurrent.Callable;
 
 // Subtask 1.1
-class TransactionProcessor implements Callable<Void> {
-    private AccountDetails account;
+class WithdrawTransactionProcessor implements Callable<Void> {
     private int transactionAmount;
+    private Transaction transaction;
 
-    public TransactionProcessor(AccountDetails account, int transactionAmount) {
-        this.account = account;
+    public WithdrawTransactionProcessor(Transaction transaction, int transactionAmount) {
         this.transactionAmount = transactionAmount;
+        this.transaction = transaction;
     }
 
     @Override
     public Void call() throws Exception {
-        account.deposit(transactionAmount);
+        transaction.process();
         return null;
     }
 }

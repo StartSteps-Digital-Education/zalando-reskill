@@ -20,7 +20,7 @@ public class SolidBank {
     }
 
     public Future<Void> executeCustomerTransactionAsync(AccountDetails account, int transactionAmount) {
-        TransactionProcessor transactionProcessor = new TransactionProcessor(account, transactionAmount);
+        DepositTransactionProcessor transactionProcessor = new DepositTransactionProcessor(account, transactionAmount);
         return executor.submit(transactionProcessor);
     }
 
