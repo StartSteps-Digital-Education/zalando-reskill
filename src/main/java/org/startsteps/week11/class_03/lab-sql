@@ -1,0 +1,37 @@
+Assume you have a table named clothes with the following structure:
+CREATE TABLE clothes (
+    item_id INT PRIMARY KEY,
+    name VARCHAR(100),
+    category VARCHAR(50),
+    size VARCHAR(10),
+    color VARCHAR(20),
+    price DECIMAL(10, 2),
+    quantity_in_stock INT
+);
+
+
+Retrieve Popular Picks:
+Write a SQL query to select the name, category, price, and quantity_in_stock of items
+that have more than 5 units in stock.
+
+Seasonal Sale Update:
+Due to a seasonal sale, reduce the prices of items in the 'Summer Collection' category by 20%.
+Write a SQL update statement to perform this operation.
+
+Introduce New Arrivals:
+Add a new item to the 'Fall Collection' - "Elegant Wool Coat" (item_id: 202, size: 'L', color: 'Gray', price: 149.99, quantity_in_stock: 20).
+Write a SQL insert statement to add this item to the catalog.
+
+Inventory Cleanup:
+Remove all items in the 'Outdated Styles' category or items with zero quantity in stock. Write a SQL delete statement to perform this cleanup.
+
+Final Inventory Check:
+Write a SQL query to display the name, category, price, and quantity_in_stock of all items currently in the inventory.
+
+Bonus Challenge:
+Create a new category named 'Limited Edition' and move one item from the existing categories to this new category.
+Update the quantity_in_stock to reflect the change.
+
+
+Note: Make sure to execute the queries one at a time and check the results to see the impact of each operation. You can use a tool like
+MySQL Workbench, pgAdmin, or the command line interface for your database system to execute the queries and observe the changes in the data.
