@@ -6,6 +6,6 @@ public class Main {
         OCPBank bank = new OCPBank();
 
         AccountDetails account = new AccountDetails(1, 2000);
-        bank.executeTransactionAsync(account, new WithdrawalTransaction(1100));
+//        bank.executeTransactionAsync(account, new WithdrawalTransaction(1100));
     }
 }
