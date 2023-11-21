@@ -18,7 +18,6 @@ public class MongoCrudLab {
     // users: { type: employees, }
     // category: { managers, }
 
-
     public static void main(String[] args) {
         // connect to mongodb
         MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017");
