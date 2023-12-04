@@ -1,5 +1,8 @@
 package org.startsteps.week13.class03.order;
 
+import org.startsteps.week13.class03.product.Product;
+import org.startsteps.week13.class03.product.ProductService;
+
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -10,17 +13,18 @@ public class OrderService {
 
     private static final Map<Integer, Order> orders = new ConcurrentHashMap<>();
     private static final AtomicInteger orderIdCounter = new AtomicInteger();
+    private static final ProductService productService = new ProductService();
 
     public static Order placeOrder(Order order) {
         // Validate product availability
-        Product orderedProduct = ProductService.getProduct(order.getProductId());
+        Product orderedProduct = productService.getProduct(order.getProductId());
         if (orderedProduct == null || orderedProduct.getStockQuantity() < order.getQuantity()) {
             throw new IllegalStateException("Product not available in sufficient quantity");
         }
 
         // Update product stock quantity
         orderedProduct.setStockQuantity(orderedProduct.getStockQuantity() - order.getQuantity());
-        ProductService.updateProduct(orderedProduct.getId(), orderedProduct);
+        productService.updateProduct(orderedProduct.getId(), orderedProduct);
 
         // Create the order
         int orderId = orderIdCounter.incrementAndGet();
